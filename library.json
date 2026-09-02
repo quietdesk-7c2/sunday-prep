@@ -1,0 +1,6 @@
+{
+ "v": 1,
+ "note": "Sunday Prep shared library. Every device that opens the site reads this file, so anything in here shows up everywhere, including for people you send the link to. To update it: open the app, Settings, Open sync, Download library.json, then upload that file to the repo to replace this one.",
+ "mine": [],
+ "saved": []
+}
