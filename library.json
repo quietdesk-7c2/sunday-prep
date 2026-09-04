@@ -1,6 +1,1657 @@
 {
  "v": 1,
- "note": "Sunday Prep shared library. Every device that opens the site reads this file, so anything in here shows up everywhere, including for people you send the link to. To update it: open the app, Settings, Open sync, Download library.json, then upload that file to the repo to replace this one.",
- "mine": [],
+ "note": "Sunday Prep shared library. Every device that opens the site reads this file, and everything in it joins the weekly rotation. To update: open the app, Settings, Open sync, Download library.json, then upload that file to the repo to replace this one.",
+ "when": 1788220800000,
+ "mine": [
+  {
+   "id": "pack1-chipotle-chicken",
+   "name": "Chipotle Chicken & Black Bean Bowls",
+   "cuisine": "Mexican",
+   "blurb": "Smoky, mildly spicy chicken over rice and beans. One pan, one pot.",
+   "effort": "Easy",
+   "prep": 12,
+   "cook": 28,
+   "makes": 5,
+   "reheat": "2 min",
+   "keeps": 5,
+   "freezes": true,
+   "container": "32 oz",
+   "appliances": [
+    "Oven",
+    "Large sheet pan",
+    "Medium saucepan with lid",
+    "Cutting board",
+    "Chef knife"
+   ],
+   "ing": [
+    {
+     "q": 2,
+     "u": "lb",
+     "n": "boneless skinless chicken thighs",
+     "a": "meat"
+    },
+    {
+     "q": 2,
+     "u": "tbsp",
+     "n": "chipotles in adobo",
+     "a": "pantry",
+     "note": "minced, from the small can"
+    },
+    {
+     "q": 2,
+     "u": "tbsp",
+     "n": "olive oil",
+     "a": "pantry"
+    },
+    {
+     "q": 1,
+     "u": "tbsp",
+     "n": "ground cumin",
+     "a": "pantry"
+    },
+    {
+     "q": 1.5,
+     "u": "cups",
+     "n": "long-grain white rice",
+     "a": "pantry",
+     "note": "dry"
+    },
+    {
+     "q": 1,
+     "u": "can",
+     "n": "black beans (15 oz)",
+     "a": "pantry",
+     "note": "drained and rinsed"
+    },
+    {
+     "q": 1,
+     "u": "",
+     "n": "lime",
+     "a": "produce"
+    },
+    {
+     "q": 1,
+     "u": "cup",
+     "n": "shredded Monterey Jack",
+     "a": "dairy"
+    },
+    {
+     "q": 0.33,
+     "u": "cup",
+     "n": "cilantro, chopped",
+     "a": "produce"
+    },
+    {
+     "q": null,
+     "u": "",
+     "n": "Salt and pepper",
+     "a": "pantry"
+    }
+   ],
+   "steps": [
+    "Heat the oven to 425F. Toss the chicken with the oil, minced chipotle, cumin, salt and pepper until coated.",
+    "Roast on a sheet pan 22 to 25 minutes, to 165F. Rest 10 minutes, then chop.",
+    "Cook the rice: 1.5 cups rice, 2.25 cups water, boil, cover, low 16 minutes, rest 10.",
+    "Stir the lime juice and cilantro through the rice.",
+    "Warm the beans 60 seconds in the microwave so they are not fridge-cold going in.",
+    "Build: rice, beans, chicken, cheese."
+   ],
+   "pack": "Straight in. The chipotle keeps its heat all week and does not fade like fresh chile does.",
+   "work": "2 minutes covered.",
+   "notes": "One small can of chipotles goes a long way. Freeze the rest in tablespoon blobs on parchment and bag them.",
+   "art": {
+    "base": "rice",
+    "bits": [
+     "chicken",
+     "chicken",
+     "bean",
+     "salsa",
+     "cheese",
+     "cilantro"
+    ]
+   },
+   "links": [
+    {
+     "t": "search",
+     "label": "Find a video",
+     "sub": "YouTube search",
+     "url": "https://www.youtube.com/results?search_query=chipotle+chicken+&+black+bean+bowls"
+    }
+   ]
+  },
+  {
+   "id": "pack1-barbacoa",
+   "name": "Beef Barbacoa Bowls",
+   "cuisine": "Mexican",
+   "blurb": "Chuck roast pulled apart after three hours in the oven. Enormous batch, freezes beautifully.",
+   "effort": "Easy",
+   "prep": 15,
+   "cook": 195,
+   "makes": 8,
+   "reheat": "2 min",
+   "keeps": 5,
+   "freezes": true,
+   "container": "32 oz",
+   "appliances": [
+    "Oven",
+    "Dutch oven or deep pan with foil",
+    "Medium saucepan with lid",
+    "Two forks"
+   ],
+   "ing": [
+    {
+     "q": 4,
+     "u": "lb",
+     "n": "boneless beef chuck roast",
+     "a": "meat",
+     "note": "cut into 4 big chunks"
+    },
+    {
+     "q": 1,
+     "u": "",
+     "n": "large onion",
+     "a": "produce",
+     "note": "quartered"
+    },
+    {
+     "q": 5,
+     "u": "cloves",
+     "n": "garlic",
+     "a": "produce",
+     "note": "smashed"
+    },
+    {
+     "q": 3,
+     "u": "tbsp",
+     "n": "chipotles in adobo",
+     "a": "pantry"
+    },
+    {
+     "q": 2,
+     "u": "cups",
+     "n": "beef broth",
+     "a": "pantry"
+    },
+    {
+     "q": 2,
+     "u": "",
+     "n": "limes",
+     "a": "produce",
+     "note": "juiced"
+    },
+    {
+     "q": 1,
+     "u": "tbsp",
+     "n": "ground cumin",
+     "a": "pantry"
+    },
+    {
+     "q": 2,
+     "u": "tsp",
+     "n": "dried oregano",
+     "a": "pantry"
+    },
+    {
+     "q": 2,
+     "u": "cups",
+     "n": "long-grain white rice",
+     "a": "pantry",
+     "note": "dry"
+    },
+    {
+     "q": 1,
+     "u": "",
+     "n": "red onion",
+     "a": "produce",
+     "note": "diced small"
+    },
+    {
+     "q": 1,
+     "u": "bunch",
+     "n": "cilantro",
+     "a": "produce"
+    },
+    {
+     "q": 1,
+     "u": "tbsp",
+     "n": "kosher salt",
+     "a": "pantry"
+    }
+   ],
+   "steps": [
+    "Heat the oven to 300F.",
+    "Rub the beef with the salt, cumin and oregano. Put it in the pot with the onion, garlic, chipotles, broth and lime juice. Cover tightly.",
+    "Roast 3 hours. Leave it alone.",
+    "Shred with two forks. Skim the fat off the liquid and keep the liquid.",
+    "Cook the rice while it rests: 2 cups rice, 3 cups water, boil, cover, low 16 minutes, rest 10.",
+    "Build: rice, then barbacoa with a few spoonfuls of the cooking liquid over it, red onion and cilantro on top."
+   ],
+   "pack": "Spoon plenty of the cooking liquid over the beef. Shredded beef with no liquid is dry by Wednesday.",
+   "work": "2 minutes covered.",
+   "notes": "Makes 8 lunches on purpose. Five for the week and three in the freezer buys you a Sunday off.",
+   "art": {
+    "base": "rice",
+    "bits": [
+     "beef",
+     "beef",
+     "redonion",
+     "cilantro",
+     "salsa"
+    ]
+   },
+   "links": [
+    {
+     "t": "search",
+     "label": "Find a video",
+     "sub": "YouTube search",
+     "url": "https://www.youtube.com/results?search_query=beef+barbacoa+oven+chuck+roast"
+    }
+   ]
+  },
+  {
+   "id": "pack1-verde-enchilada",
+   "name": "Salsa Verde Chicken Enchilada Bake",
+   "cuisine": "Mexican",
+   "blurb": "All the enchilada flavor with none of the rolling. Layered in a dish and cut into squares.",
+   "effort": "Easy",
+   "prep": 15,
+   "cook": 35,
+   "makes": 5,
+   "reheat": "2.5 min",
+   "keeps": 5,
+   "freezes": true,
+   "container": "24 to 32 oz",
+   "appliances": [
+    "Oven",
+    "9x13 baking dish",
+    "Large bowl",
+    "Two forks",
+    "Sheet pan"
+   ],
+   "ing": [
+    {
+     "q": 2,
+     "u": "lb",
+     "n": "boneless skinless chicken breasts",
+     "a": "meat"
+    },
+    {
+     "q": 2,
+     "u": "cups",
+     "n": "salsa verde",
+     "a": "pantry"
+    },
+    {
+     "q": 1,
+     "u": "can",
+     "n": "black beans (15 oz)",
+     "a": "pantry",
+     "note": "drained"
+    },
+    {
+     "q": 1.5,
+     "u": "cups",
+     "n": "frozen corn",
+     "a": "frozen"
+    },
+    {
+     "q": 12,
+     "u": "",
+     "n": "corn tortillas",
+     "a": "bakery",
+     "note": "cut in half"
+    },
+    {
+     "q": 2.5,
+     "u": "cups",
+     "n": "shredded Monterey Jack",
+     "a": "dairy"
+    },
+    {
+     "q": 0.5,
+     "u": "cup",
+     "n": "sour cream",
+     "a": "dairy"
+    },
+    {
+     "q": 1,
+     "u": "tsp",
+     "n": "ground cumin",
+     "a": "pantry"
+    },
+    {
+     "q": 0.33,
+     "u": "cup",
+     "n": "cilantro, chopped",
+     "a": "produce"
+    },
+    {
+     "q": null,
+     "u": "",
+     "n": "Salt and pepper",
+     "a": "pantry"
+    }
+   ],
+   "steps": [
+    "Heat the oven to 400F. Season the chicken and roast on a sheet pan 22 minutes, to 165F.",
+    "Shred it with two forks while warm, then toss with 1.5 cups of the salsa verde, the sour cream, cumin, beans and corn.",
+    "Layer in the baking dish: a spoonful of the remaining salsa, then tortillas, then half the chicken mix, then a cup of cheese. Repeat.",
+    "Finish with the last of the cheese.",
+    "Bake 20 minutes until bubbling. Rest 15 minutes before cutting or it will slide apart.",
+    "Cut into five squares and lift each into a container. Cilantro over the top."
+   ],
+   "pack": "Cool completely before the lid goes on. Warm plus lid equals a wet top layer by Tuesday.",
+   "work": "2.5 minutes covered. Stop at 90 seconds, stir the middle, then finish.",
+   "notes": "Corn tortillas hold up far better than flour here. Flour turns to paste.",
+   "art": {
+    "base": "salsa",
+    "bits": [
+     "chicken",
+     "cheese",
+     "cheese",
+     "bean",
+     "corn",
+     "chile"
+    ]
+   },
+   "links": [
+    {
+     "t": "search",
+     "label": "Find a video",
+     "sub": "YouTube search",
+     "url": "https://www.youtube.com/results?search_query=salsa+verde+chicken+enchilada+casserole"
+    }
+   ]
+  },
+  {
+   "id": "pack1-chicken-broccoli-alfredo",
+   "name": "Chicken & Broccoli Alfredo Bake",
+   "cuisine": "Italian",
+   "blurb": "Creamy, baked, and it holds its texture better than a stovetop alfredo does.",
+   "effort": "Medium",
+   "prep": 15,
+   "cook": 35,
+   "makes": 5,
+   "reheat": "2.5 min",
+   "keeps": 4,
+   "freezes": false,
+   "container": "24 to 32 oz",
+   "appliances": [
+    "Oven",
+    "Large pot",
+    "Large skillet",
+    "9x13 baking dish",
+    "Colander"
+   ],
+   "ing": [
+    {
+     "q": 1,
+     "u": "lb",
+     "n": "penne or rotini",
+     "a": "pantry"
+    },
+    {
+     "q": 2,
+     "u": "lb",
+     "n": "boneless skinless chicken breasts",
+     "a": "meat",
+     "note": "cut into chunks"
+    },
+    {
+     "q": 5,
+     "u": "cups",
+     "n": "broccoli florets",
+     "a": "produce"
+    },
+    {
+     "q": 4,
+     "u": "tbsp",
+     "n": "butter",
+     "a": "dairy"
+    },
+    {
+     "q": 3,
+     "u": "cloves",
+     "n": "garlic",
+     "a": "produce",
+     "note": "minced"
+    },
+    {
+     "q": 2,
+     "u": "cups",
+     "n": "heavy cream",
+     "a": "dairy"
+    },
+    {
+     "q": 1.5,
+     "u": "cups",
+     "n": "grated parmesan",
+     "a": "dairy"
+    },
+    {
+     "q": 1,
+     "u": "cup",
+     "n": "shredded mozzarella",
+     "a": "dairy"
+    },
+    {
+     "q": 2,
+     "u": "tbsp",
+     "n": "olive oil",
+     "a": "pantry"
+    },
+    {
+     "q": null,
+     "u": "",
+     "n": "Salt and pepper",
+     "a": "pantry"
+    }
+   ],
+   "steps": [
+    "Heat the oven to 375F. Boil the pasta two minutes short of the box time. Drop the broccoli into the same water for the last 90 seconds. Drain both.",
+    "Season the chicken and brown it in the oil over medium-high, 7 minutes. Set aside.",
+    "Same pan: melt the butter, cook the garlic 30 seconds, pour in the cream. Simmer 4 minutes.",
+    "Off the heat, whisk in the parmesan a handful at a time so it melts smooth instead of seizing.",
+    "Fold together the pasta, broccoli, chicken and sauce. It should look loose. Spread in the dish, mozzarella on top.",
+    "Bake 18 minutes. Rest 10 before portioning."
+   ],
+   "pack": "Leave it looser than you would serve it hot. Cream sauce tightens hard overnight.",
+   "work": "Splash of milk or water, then 2.5 minutes covered. Stir at 90 seconds.",
+   "notes": "Does not freeze. Cream splits. Keep it to a four-day week.",
+   "art": {
+    "base": "pasta",
+    "bits": [
+     "mozz",
+     "chicken",
+     "broccoli",
+     "broccoli",
+     "cheese"
+    ]
+   },
+   "links": [
+    {
+     "t": "search",
+     "label": "Find a video",
+     "sub": "YouTube search",
+     "url": "https://www.youtube.com/results?search_query=chicken+&+broccoli+alfredo+bake"
+    }
+   ]
+  },
+  {
+   "id": "pack1-sausage-tortellini",
+   "name": "Italian Sausage & Tortellini Skillet",
+   "cuisine": "Italian",
+   "blurb": "Refrigerated tortellini turns this into a twenty-minute job with almost no chopping.",
+   "effort": "Easy",
+   "prep": 8,
+   "cook": 20,
+   "makes": 5,
+   "reheat": "2 min",
+   "keeps": 5,
+   "freezes": false,
+   "container": "24 oz",
+   "appliances": [
+    "Large deep skillet with lid",
+    "Cutting board",
+    "Chef knife"
+   ],
+   "ing": [
+    {
+     "q": 1.5,
+     "u": "lb",
+     "n": "Italian turkey sausage",
+     "a": "meat",
+     "note": "casings removed"
+    },
+    {
+     "q": 20,
+     "u": "oz",
+     "n": "refrigerated cheese tortellini",
+     "a": "dairy"
+    },
+    {
+     "q": 1,
+     "u": "jar",
+     "n": "marinara sauce (24 oz)",
+     "a": "pantry"
+    },
+    {
+     "q": 1,
+     "u": "cup",
+     "n": "chicken broth",
+     "a": "pantry"
+    },
+    {
+     "q": 4,
+     "u": "cups",
+     "n": "fresh spinach",
+     "a": "produce"
+    },
+    {
+     "q": 3,
+     "u": "cloves",
+     "n": "garlic",
+     "a": "produce",
+     "note": "minced"
+    },
+    {
+     "q": 0.5,
+     "u": "cup",
+     "n": "heavy cream",
+     "a": "dairy"
+    },
+    {
+     "q": 0.5,
+     "u": "cup",
+     "n": "grated parmesan",
+     "a": "dairy"
+    },
+    {
+     "q": 2,
+     "u": "tbsp",
+     "n": "olive oil",
+     "a": "pantry"
+    }
+   ],
+   "steps": [
+    "Brown the sausage in the oil over medium-high, breaking it up, about 7 minutes.",
+    "Garlic, 30 seconds.",
+    "Add the marinara and broth. Bring to a simmer.",
+    "Tip in the tortellini, cover, and cook 5 minutes, stirring once. They are done when they float and give to a fork.",
+    "Stir in the cream, then the spinach a handful at a time until it wilts.",
+    "Parmesan off the heat. Cool before packing."
+   ],
+   "pack": "Tortellini absorbs sauce overnight and puffs up. Keep the sauce loose and do not overfill the container.",
+   "work": "2 minutes covered, gently. Tortellini splits if you blast it.",
+   "notes": "Does not freeze well, the pasta goes grainy. Four days maximum.",
+   "art": {
+    "base": "redsauce",
+    "bits": [
+     "mozz",
+     "sausage",
+     "spinach",
+     "cheese",
+     "mozz"
+    ]
+   },
+   "links": [
+    {
+     "t": "search",
+     "label": "Find a video",
+     "sub": "YouTube search",
+     "url": "https://www.youtube.com/results?search_query=italian+sausage+&+tortellini+skillet"
+    }
+   ]
+  },
+  {
+   "id": "pack1-chicken-piccata-orzo",
+   "name": "Chicken Piccata with Orzo",
+   "cuisine": "Italian",
+   "blurb": "Lemon, butter and capers over orzo. The brightest thing on the list.",
+   "effort": "Medium",
+   "prep": 12,
+   "cook": 25,
+   "makes": 5,
+   "reheat": "2 min",
+   "keeps": 5,
+   "freezes": false,
+   "container": "24 oz",
+   "appliances": [
+    "Large skillet",
+    "Medium saucepan",
+    "Shallow dish",
+    "Cutting board",
+    "Chef knife"
+   ],
+   "ing": [
+    {
+     "q": 2,
+     "u": "lb",
+     "n": "boneless skinless chicken breasts",
+     "a": "meat",
+     "note": "sliced into thin cutlets"
+    },
+    {
+     "q": 0.5,
+     "u": "cup",
+     "n": "all-purpose flour",
+     "a": "pantry"
+    },
+    {
+     "q": 4,
+     "u": "tbsp",
+     "n": "butter",
+     "a": "dairy"
+    },
+    {
+     "q": 3,
+     "u": "tbsp",
+     "n": "olive oil",
+     "a": "pantry"
+    },
+    {
+     "q": 1.5,
+     "u": "cups",
+     "n": "chicken broth",
+     "a": "pantry"
+    },
+    {
+     "q": 3,
+     "u": "",
+     "n": "lemons",
+     "a": "produce",
+     "note": "juiced, about 1/2 cup"
+    },
+    {
+     "q": 0.25,
+     "u": "cup",
+     "n": "capers",
+     "a": "pantry",
+     "note": "drained"
+    },
+    {
+     "q": 1.5,
+     "u": "cups",
+     "n": "orzo",
+     "a": "pantry",
+     "note": "dry"
+    },
+    {
+     "q": 0.25,
+     "u": "cup",
+     "n": "parsley, chopped",
+     "a": "produce"
+    },
+    {
+     "q": null,
+     "u": "",
+     "n": "Salt and pepper",
+     "a": "pantry"
+    }
+   ],
+   "steps": [
+    "Season the cutlets and dredge them in the flour, shaking off the excess.",
+    "Cook in the oil and 1 tbsp butter over medium-high, 3 minutes a side. Work in batches. Set aside.",
+    "Same pan: pour in the broth and lemon juice, scraping the bottom. Simmer 4 minutes until it reduces by about a third.",
+    "Off the heat, swirl in the remaining butter and the capers.",
+    "Cook the orzo in salted water per the box, minus a minute. Drain.",
+    "Orzo in the containers, chicken on top, sauce spooned over, parsley last."
+   ],
+   "pack": "Sauce goes over the orzo, not just the chicken. The orzo drinks it and stays moist all week.",
+   "work": "2 minutes covered. The lemon dulls slightly on reheat, so a fresh squeeze at your desk is worth it.",
+   "notes": "Cutlets reheat far better than whole breasts. Slicing thin is the whole trick.",
+   "art": {
+    "base": "orzo",
+    "bits": [
+     "chicken",
+     "chicken",
+     "greenpep",
+     "spinach",
+     "mozz"
+    ]
+   },
+   "links": [
+    {
+     "t": "search",
+     "label": "Find a video",
+     "sub": "YouTube search",
+     "url": "https://www.youtube.com/results?search_query=chicken+piccata+with+orzo"
+    }
+   ]
+  },
+  {
+   "id": "pack1-chicken-bacon-ranch",
+   "name": "Chicken Bacon Ranch Rice Bowls",
+   "cuisine": "American",
+   "blurb": "Exactly what it sounds like. Very hard to be sad about on a Wednesday.",
+   "effort": "Easy",
+   "prep": 12,
+   "cook": 30,
+   "makes": 5,
+   "reheat": "2 min",
+   "keeps": 5,
+   "freezes": true,
+   "container": "32 oz, plus a 2 oz cup for ranch",
+   "appliances": [
+    "Oven",
+    "Two sheet pans",
+    "Medium saucepan with lid",
+    "Two forks"
+   ],
+   "ing": [
+    {
+     "q": 2,
+     "u": "lb",
+     "n": "boneless skinless chicken breasts",
+     "a": "meat"
+    },
+    {
+     "q": 8,
+     "u": "slices",
+     "n": "bacon",
+     "a": "meat"
+    },
+    {
+     "q": 1.5,
+     "u": "cups",
+     "n": "long-grain white rice",
+     "a": "pantry",
+     "note": "dry"
+    },
+    {
+     "q": 1.5,
+     "u": "cups",
+     "n": "shredded cheddar",
+     "a": "dairy"
+    },
+    {
+     "q": 2,
+     "u": "cups",
+     "n": "broccoli florets",
+     "a": "produce"
+    },
+    {
+     "q": 0.75,
+     "u": "cup",
+     "n": "ranch dressing",
+     "a": "dairy"
+    },
+    {
+     "q": 1,
+     "u": "tbsp",
+     "n": "garlic powder",
+     "a": "pantry"
+    },
+    {
+     "q": 3,
+     "u": "",
+     "n": "green onions",
+     "a": "produce",
+     "note": "sliced"
+    },
+    {
+     "q": null,
+     "u": "",
+     "n": "Salt and pepper",
+     "a": "pantry"
+    }
+   ],
+   "steps": [
+    "Heat the oven to 400F. Lay the bacon on a sheet pan and bake 16 to 18 minutes until crisp. Drain on paper towels.",
+    "Season the chicken with the garlic powder, salt and pepper. Roast on the second pan 22 minutes, to 165F.",
+    "Cook the rice: 1.5 cups rice, 2.25 cups water, boil, cover, low 16 minutes, rest 10.",
+    "Steam the broccoli 4 minutes, no more. It cooks again every time you reheat.",
+    "Shred or chop the chicken. Crumble the bacon.",
+    "Build: rice, chicken, broccoli beside it, cheddar and bacon on top, green onions last."
+   ],
+   "pack": "Bacon on top and nowhere near the sauce. Ranch in a side cup, always. Heated ranch is a bad afternoon.",
+   "work": "2 minutes covered. Ranch after.",
+   "notes": "Bacon softens by Thursday no matter what. If that bothers you, keep it in a snack bag and add it cold.",
+   "art": {
+    "base": "rice",
+    "bits": [
+     "chicken",
+     "pork",
+     "cheese",
+     "broccoli",
+     "scallion"
+    ]
+   },
+   "links": [
+    {
+     "t": "search",
+     "label": "Find a video",
+     "sub": "YouTube search",
+     "url": "https://www.youtube.com/results?search_query=chicken+bacon+ranch+rice+bowls"
+    }
+   ]
+  },
+  {
+   "id": "pack1-sloppy-joe-bowls",
+   "name": "Sloppy Joe Rice Bowls",
+   "cuisine": "American",
+   "blurb": "The filling without the bun, so it actually survives a microwave. Twenty-five minutes.",
+   "effort": "Easy",
+   "prep": 10,
+   "cook": 25,
+   "makes": 5,
+   "reheat": "2 min",
+   "keeps": 5,
+   "freezes": true,
+   "container": "24 to 32 oz",
+   "appliances": [
+    "Large skillet",
+    "Medium saucepan with lid",
+    "Cutting board",
+    "Chef knife"
+   ],
+   "ing": [
+    {
+     "q": 2,
+     "u": "lb",
+     "n": "lean ground beef",
+     "a": "meat",
+     "note": "90/10"
+    },
+    {
+     "q": 1,
+     "u": "",
+     "n": "yellow onion",
+     "a": "produce",
+     "note": "diced"
+    },
+    {
+     "q": 1,
+     "u": "",
+     "n": "green bell pepper",
+     "a": "produce",
+     "note": "diced"
+    },
+    {
+     "q": 1,
+     "u": "cup",
+     "n": "ketchup",
+     "a": "pantry"
+    },
+    {
+     "q": 2,
+     "u": "tbsp",
+     "n": "tomato paste",
+     "a": "pantry"
+    },
+    {
+     "q": 2,
+     "u": "tbsp",
+     "n": "brown sugar",
+     "a": "pantry"
+    },
+    {
+     "q": 1,
+     "u": "tbsp",
+     "n": "Worcestershire sauce",
+     "a": "pantry"
+    },
+    {
+     "q": 1,
+     "u": "tbsp",
+     "n": "yellow mustard",
+     "a": "pantry"
+    },
+    {
+     "q": 1.5,
+     "u": "cups",
+     "n": "long-grain white rice",
+     "a": "pantry",
+     "note": "dry"
+    },
+    {
+     "q": 1,
+     "u": "cup",
+     "n": "shredded cheddar",
+     "a": "dairy"
+    },
+    {
+     "q": null,
+     "u": "",
+     "n": "Salt and pepper",
+     "a": "pantry"
+    }
+   ],
+   "steps": [
+    "Cook the rice: 1.5 cups rice, 2.25 cups water, boil, cover, low 16 minutes, rest 10.",
+    "Brown the beef over medium-high, 7 minutes. Drain the fat.",
+    "Add the onion and pepper, cook 5 minutes.",
+    "Stir in the tomato paste and cook it for 2 minutes so it darkens.",
+    "Add the ketchup, brown sugar, Worcestershire, mustard and half a cup of water. Simmer 6 minutes until it thickens.",
+    "Rice in the containers, sloppy joe on top, cheddar last."
+   ],
+   "pack": "Cheese while it is still warm so it melts into a seal over the top.",
+   "work": "2 minutes covered.",
+   "notes": "Freezes as well as anything here. Doubling this is the least painful double batch on the list.",
+   "art": {
+    "base": "rice",
+    "bits": [
+     "beef",
+     "beef",
+     "redsauce",
+     "greenpep",
+     "onion",
+     "cheese"
+    ]
+   },
+   "links": [
+    {
+     "t": "search",
+     "label": "Find a video",
+     "sub": "YouTube search",
+     "url": "https://www.youtube.com/results?search_query=sloppy+joe+rice+bowls"
+    }
+   ]
+  },
+  {
+   "id": "pack1-loaded-chicken-potato",
+   "name": "Loaded Chicken & Potato Bowls",
+   "cuisine": "American",
+   "blurb": "Roasted potatoes, seasoned chicken, cheddar and green onion. All oven, two pans.",
+   "effort": "Easy",
+   "prep": 15,
+   "cook": 38,
+   "makes": 5,
+   "reheat": "2.5 min",
+   "keeps": 5,
+   "freezes": true,
+   "container": "32 oz",
+   "appliances": [
+    "Oven",
+    "Two large sheet pans",
+    "Cutting board",
+    "Chef knife"
+   ],
+   "ing": [
+    {
+     "q": 3,
+     "u": "lb",
+     "n": "baby red or Yukon gold potatoes",
+     "a": "produce",
+     "note": "halved"
+    },
+    {
+     "q": 2,
+     "u": "lb",
+     "n": "boneless skinless chicken thighs",
+     "a": "meat"
+    },
+    {
+     "q": 3,
+     "u": "tbsp",
+     "n": "olive oil",
+     "a": "pantry"
+    },
+    {
+     "q": 1,
+     "u": "tbsp",
+     "n": "smoked paprika",
+     "a": "pantry"
+    },
+    {
+     "q": 1,
+     "u": "tbsp",
+     "n": "garlic powder",
+     "a": "pantry"
+    },
+    {
+     "q": 1.5,
+     "u": "cups",
+     "n": "shredded cheddar",
+     "a": "dairy"
+    },
+    {
+     "q": 1,
+     "u": "lb",
+     "n": "green beans",
+     "a": "produce",
+     "note": "trimmed"
+    },
+    {
+     "q": 4,
+     "u": "",
+     "n": "green onions",
+     "a": "produce",
+     "note": "sliced"
+    },
+    {
+     "q": null,
+     "u": "",
+     "n": "Salt and pepper",
+     "a": "pantry"
+    }
+   ],
+   "steps": [
+    "Heat the oven to 425F.",
+    "Toss the potatoes with 2 tbsp oil, the paprika, garlic powder, salt and pepper. Spread cut side down on one pan.",
+    "Season the chicken and put it on the second pan. Both in the oven.",
+    "At 22 minutes pull the chicken (165F). Add the green beans tossed with the last of the oil to the potato pan and give it 12 more minutes.",
+    "Chop the chicken.",
+    "Build: potatoes on one side, green beans beside them, chicken on top, cheddar and green onions over everything."
+   ],
+   "pack": "Waxy potatoes only, red or Yukon gold. Russets go grainy and mealy in the fridge and never come back.",
+   "work": "2.5 minutes covered. Potatoes hold heat unevenly, so stir before the last 30 seconds.",
+   "notes": "Cut side down on the pan is what gets you a browned face on every potato half.",
+   "art": {
+    "base": "potato",
+    "bits": [
+     "chicken",
+     "potato",
+     "cheese",
+     "greenbean",
+     "scallion"
+    ]
+   },
+   "links": [
+    {
+     "t": "search",
+     "label": "Find a video",
+     "sub": "YouTube search",
+     "url": "https://www.youtube.com/results?search_query=loaded+chicken+&+potato+bowls"
+    }
+   ]
+  },
+  {
+   "id": "pack1-beef-broccoli",
+   "name": "Beef & Broccoli Rice Bowls",
+   "cuisine": "Asian",
+   "blurb": "Takeout at home, and it reheats better than the takeout version does.",
+   "effort": "Easy",
+   "prep": 15,
+   "cook": 20,
+   "makes": 5,
+   "reheat": "2 min",
+   "keeps": 5,
+   "freezes": true,
+   "container": "32 oz",
+   "appliances": [
+    "Large skillet or wok",
+    "Medium saucepan with lid",
+    "Small bowl",
+    "Cutting board",
+    "Chef knife"
+   ],
+   "ing": [
+    {
+     "q": 2,
+     "u": "lb",
+     "n": "flank or sirloin steak",
+     "a": "meat",
+     "note": "sliced thin against the grain"
+    },
+    {
+     "q": 2,
+     "u": "lb",
+     "n": "broccoli florets",
+     "a": "produce"
+    },
+    {
+     "q": 0.5,
+     "u": "cup",
+     "n": "low-sodium soy sauce",
+     "a": "pantry"
+    },
+    {
+     "q": 0.33,
+     "u": "cup",
+     "n": "beef broth",
+     "a": "pantry"
+    },
+    {
+     "q": 3,
+     "u": "tbsp",
+     "n": "brown sugar",
+     "a": "pantry"
+    },
+    {
+     "q": 2,
+     "u": "tbsp",
+     "n": "cornstarch",
+     "a": "pantry",
+     "note": "divided"
+    },
+    {
+     "q": 4,
+     "u": "cloves",
+     "n": "garlic",
+     "a": "produce",
+     "note": "minced"
+    },
+    {
+     "q": 1,
+     "u": "tsp",
+     "n": "ground ginger",
+     "a": "pantry"
+    },
+    {
+     "q": 3,
+     "u": "tbsp",
+     "n": "vegetable oil",
+     "a": "pantry"
+    },
+    {
+     "q": 1.5,
+     "u": "cups",
+     "n": "jasmine rice",
+     "a": "pantry",
+     "note": "dry"
+    }
+   ],
+   "steps": [
+    "Toss the sliced beef with 1 tbsp of the cornstarch. This is what keeps it tender instead of tough.",
+    "Whisk the soy sauce, broth, brown sugar, remaining cornstarch, garlic and ginger in a bowl.",
+    "Cook the rice: 1.5 cups rice, 2.25 cups water, boil, cover, low 15 minutes, rest 10.",
+    "Get the pan very hot. Cook the beef in two batches, 2 minutes each, and move it to a plate. Crowding it makes it grey and steamed.",
+    "Steam the broccoli 4 minutes, firm and bright.",
+    "Return the beef, pour in the sauce, and cook 2 minutes until it thickens and glazes.",
+    "Rice, broccoli one side, beef the other."
+   ],
+   "pack": "Undercook the broccoli deliberately. Perfect on Sunday means mush by Tuesday.",
+   "work": "2 minutes covered. Do not push it further, thin beef turns to leather.",
+   "notes": "Freeze the steak for 30 minutes before slicing and you can get it paper thin with a normal knife.",
+   "art": {
+    "base": "rice",
+    "bits": [
+     "steak",
+     "steak",
+     "broccoli",
+     "broccoli",
+     "teriyaki"
+    ]
+   },
+   "links": [
+    {
+     "t": "search",
+     "label": "Find a video",
+     "sub": "YouTube search",
+     "url": "https://www.youtube.com/results?search_query=beef+&+broccoli+rice+bowls"
+    }
+   ]
+  },
+  {
+   "id": "pack1-sesame-chicken",
+   "name": "Sesame Chicken & Green Beans",
+   "cuisine": "Asian",
+   "blurb": "Sticky, nutty from sesame rather than nuts, with green beans that stay crisp.",
+   "effort": "Easy",
+   "prep": 12,
+   "cook": 25,
+   "makes": 5,
+   "reheat": "2 min",
+   "keeps": 5,
+   "freezes": true,
+   "container": "32 oz",
+   "appliances": [
+    "Large skillet",
+    "Medium saucepan with lid",
+    "Small bowl",
+    "Sheet pan"
+   ],
+   "ing": [
+    {
+     "q": 2,
+     "u": "lb",
+     "n": "boneless skinless chicken thighs",
+     "a": "meat",
+     "note": "cut into 1-inch pieces"
+    },
+    {
+     "q": 1.5,
+     "u": "lb",
+     "n": "green beans",
+     "a": "produce",
+     "note": "trimmed"
+    },
+    {
+     "q": 0.5,
+     "u": "cup",
+     "n": "low-sodium soy sauce",
+     "a": "pantry"
+    },
+    {
+     "q": 0.25,
+     "u": "cup",
+     "n": "honey",
+     "a": "pantry"
+    },
+    {
+     "q": 3,
+     "u": "tbsp",
+     "n": "rice vinegar",
+     "a": "pantry"
+    },
+    {
+     "q": 2,
+     "u": "tbsp",
+     "n": "toasted sesame oil",
+     "a": "pantry"
+    },
+    {
+     "q": 1,
+     "u": "tbsp",
+     "n": "cornstarch",
+     "a": "pantry"
+    },
+    {
+     "q": 4,
+     "u": "cloves",
+     "n": "garlic",
+     "a": "produce",
+     "note": "minced"
+    },
+    {
+     "q": 3,
+     "u": "tbsp",
+     "n": "sesame seeds",
+     "a": "pantry"
+    },
+    {
+     "q": 1.5,
+     "u": "cups",
+     "n": "jasmine rice",
+     "a": "pantry",
+     "note": "dry"
+    },
+    {
+     "q": 2,
+     "u": "tbsp",
+     "n": "vegetable oil",
+     "a": "pantry"
+    }
+   ],
+   "steps": [
+    "Whisk the soy sauce, honey, rice vinegar, sesame oil, cornstarch and garlic until no lumps remain.",
+    "Cook the rice: 1.5 cups rice, 2.25 cups water, boil, cover, low 15 minutes, rest 10.",
+    "Roast the green beans at 425F with a little oil for 12 minutes, or steam them 4 minutes if the oven is busy.",
+    "Cook the chicken in the vegetable oil over medium-high, 7 minutes, until browned through.",
+    "Pour in the sauce. It thickens in about 90 seconds. Stir until every piece is glazed.",
+    "Sesame seeds off the heat. Rice, green beans on one side, chicken on the other."
+   ],
+   "pack": "The glaze sets firm in the fridge and loosens with heat. That is normal, not a mistake.",
+   "work": "2 minutes covered.",
+   "notes": "Sesame gives you that toasted, nutty thing without a single tree nut in the container.",
+   "art": {
+    "base": "rice",
+    "bits": [
+     "glazed",
+     "glazed",
+     "greenbean",
+     "greenbean",
+     "carrot"
+    ]
+   },
+   "links": [
+    {
+     "t": "search",
+     "label": "Find a video",
+     "sub": "YouTube search",
+     "url": "https://www.youtube.com/results?search_query=sesame+chicken+&+green+beans"
+    }
+   ]
+  },
+  {
+   "id": "pack1-med-couscous",
+   "name": "Mediterranean Chicken & Couscous Bowls",
+   "cuisine": "Greek",
+   "blurb": "Couscous is done in five minutes off the heat, which makes this the fastest bowl here.",
+   "effort": "Easy",
+   "prep": 15,
+   "cook": 22,
+   "makes": 5,
+   "reheat": "2 min",
+   "keeps": 4,
+   "freezes": false,
+   "container": "24 oz, plus a 8 oz side for the salad",
+   "appliances": [
+    "Oven",
+    "Sheet pan",
+    "Medium saucepan with lid",
+    "Mixing bowl"
+   ],
+   "ing": [
+    {
+     "q": 2,
+     "u": "lb",
+     "n": "boneless skinless chicken thighs",
+     "a": "meat"
+    },
+    {
+     "q": 3,
+     "u": "tbsp",
+     "n": "olive oil",
+     "a": "pantry"
+    },
+    {
+     "q": 2,
+     "u": "",
+     "n": "lemons",
+     "a": "produce",
+     "note": "juiced"
+    },
+    {
+     "q": 1,
+     "u": "tbsp",
+     "n": "dried oregano",
+     "a": "pantry"
+    },
+    {
+     "q": 2,
+     "u": "tsp",
+     "n": "ground coriander",
+     "a": "pantry"
+    },
+    {
+     "q": 1.5,
+     "u": "cups",
+     "n": "couscous",
+     "a": "pantry",
+     "note": "dry"
+    },
+    {
+     "q": 1.75,
+     "u": "cups",
+     "n": "chicken broth",
+     "a": "pantry"
+    },
+    {
+     "q": 2,
+     "u": "cups",
+     "n": "cherry tomatoes",
+     "a": "produce",
+     "note": "halved"
+    },
+    {
+     "q": 1,
+     "u": "",
+     "n": "English cucumber",
+     "a": "produce",
+     "note": "diced"
+    },
+    {
+     "q": 0.5,
+     "u": "",
+     "n": "red onion",
+     "a": "produce",
+     "note": "sliced thin"
+    },
+    {
+     "q": 1,
+     "u": "cup",
+     "n": "hummus",
+     "a": "dairy"
+    },
+    {
+     "q": null,
+     "u": "",
+     "n": "Salt and pepper",
+     "a": "pantry"
+    }
+   ],
+   "steps": [
+    "Heat the oven to 425F. Toss the chicken with 2 tbsp oil, half the lemon juice, the oregano, coriander, salt and pepper.",
+    "Roast 22 minutes, to 165F. Rest 10, then slice.",
+    "Bring the broth to a boil, stir in the couscous, cover, and take it off the heat. Five minutes later fluff it with a fork. That is the whole method.",
+    "Stir the last of the oil and lemon juice through the couscous.",
+    "Toss the tomatoes, cucumber and red onion together with a pinch of salt. Keep separate.",
+    "Couscous and chicken in the main container. Salad in the side one, hummus in with it."
+   ],
+   "pack": "Salad and hummus never go in the microwave and never touch hot food on Sunday. Two containers on this one.",
+   "work": "Heat the couscous and chicken 2 minutes. Tip the cold salad and hummus over it afterward.",
+   "notes": "Hummus stands in for tzatziki here and holds up a day longer.",
+   "art": {
+    "base": "orzo",
+    "bits": [
+     "chicken",
+     "tomato",
+     "cucumber",
+     "redonion",
+     "tzatziki"
+    ]
+   },
+   "links": [
+    {
+     "t": "search",
+     "label": "Find a video",
+     "sub": "YouTube search",
+     "url": "https://www.youtube.com/results?search_query=mediterranean+chicken+&+couscous+bowls"
+    }
+   ]
+  },
+  {
+   "id": "pack1-cajun-alfredo",
+   "name": "Cajun Chicken Alfredo",
+   "cuisine": "Cajun",
+   "blurb": "Blackened chicken over cream sauce with peppers. Rich, and it goes fast.",
+   "effort": "Medium",
+   "prep": 12,
+   "cook": 28,
+   "makes": 5,
+   "reheat": "2.5 min",
+   "keeps": 4,
+   "freezes": false,
+   "container": "24 oz",
+   "appliances": [
+    "Large skillet",
+    "Large pot",
+    "Colander",
+    "Cutting board",
+    "Chef knife"
+   ],
+   "ing": [
+    {
+     "q": 2,
+     "u": "lb",
+     "n": "boneless skinless chicken breasts",
+     "a": "meat",
+     "note": "sliced into strips"
+    },
+    {
+     "q": 2,
+     "u": "tbsp",
+     "n": "Cajun seasoning",
+     "a": "pantry",
+     "note": "divided"
+    },
+    {
+     "q": 1,
+     "u": "lb",
+     "n": "penne or fettuccine",
+     "a": "pantry"
+    },
+    {
+     "q": 2,
+     "u": "",
+     "n": "bell peppers",
+     "a": "produce",
+     "note": "sliced"
+    },
+    {
+     "q": 4,
+     "u": "tbsp",
+     "n": "butter",
+     "a": "dairy"
+    },
+    {
+     "q": 4,
+     "u": "cloves",
+     "n": "garlic",
+     "a": "produce",
+     "note": "minced"
+    },
+    {
+     "q": 2,
+     "u": "cups",
+     "n": "heavy cream",
+     "a": "dairy"
+    },
+    {
+     "q": 1.5,
+     "u": "cups",
+     "n": "grated parmesan",
+     "a": "dairy"
+    },
+    {
+     "q": 2,
+     "u": "tbsp",
+     "n": "olive oil",
+     "a": "pantry"
+    },
+    {
+     "q": 3,
+     "u": "",
+     "n": "green onions",
+     "a": "produce",
+     "note": "sliced"
+    }
+   ],
+   "steps": [
+    "Boil the pasta two minutes short of the box time. Save a cup of pasta water before draining.",
+    "Toss the chicken with half the Cajun seasoning. Cook in the oil over medium-high, 6 minutes, until it takes on real color. Set aside.",
+    "Same pan: butter, peppers, 5 minutes. Garlic and the rest of the seasoning, 30 seconds.",
+    "Pour in the cream and simmer 4 minutes.",
+    "Off the heat, whisk in the parmesan a handful at a time so it goes smooth rather than seizing.",
+    "Return the chicken and pasta, loosen with pasta water until it looks slightly too saucy, and toss. Green onions last."
+   ],
+   "pack": "Deliberately too saucy on Sunday is correct. It tightens overnight and comes back with heat.",
+   "work": "Splash of milk, then 2.5 minutes covered. Stir hard at 90 seconds.",
+   "notes": "Cajun blends vary wildly in salt. Start with 1.5 tbsp the first time you make it.",
+   "art": {
+    "base": "pasta",
+    "bits": [
+     "mozz",
+     "chicken",
+     "redpep",
+     "greenpep",
+     "cheese"
+    ]
+   },
+   "links": [
+    {
+     "t": "search",
+     "label": "Find a video",
+     "sub": "YouTube search",
+     "url": "https://www.youtube.com/results?search_query=cajun+chicken+alfredo"
+    }
+   ]
+  },
+  {
+   "id": "pack1-red-beans-rice",
+   "name": "Red Beans & Rice with Smoked Sausage",
+   "cuisine": "Cajun",
+   "blurb": "Canned beans, so it is done in forty minutes instead of overnight. Better every day it sits.",
+   "effort": "Easy",
+   "prep": 12,
+   "cook": 40,
+   "makes": 5,
+   "reheat": "2 min",
+   "keeps": 5,
+   "freezes": true,
+   "container": "24 to 32 oz",
+   "appliances": [
+    "Large deep skillet or Dutch oven with lid",
+    "Medium saucepan with lid",
+    "Cutting board",
+    "Chef knife"
+   ],
+   "ing": [
+    {
+     "q": 14,
+     "u": "oz",
+     "n": "andouille or smoked sausage",
+     "a": "meat",
+     "note": "sliced into coins"
+    },
+    {
+     "q": 3,
+     "u": "cans",
+     "n": "red kidney beans (15 oz each)",
+     "a": "pantry",
+     "note": "drained and rinsed"
+    },
+    {
+     "q": 1,
+     "u": "",
+     "n": "yellow onion",
+     "a": "produce",
+     "note": "diced"
+    },
+    {
+     "q": 1,
+     "u": "",
+     "n": "green bell pepper",
+     "a": "produce",
+     "note": "diced"
+    },
+    {
+     "q": 3,
+     "u": "stalks",
+     "n": "celery",
+     "a": "produce",
+     "note": "diced"
+    },
+    {
+     "q": 4,
+     "u": "cloves",
+     "n": "garlic",
+     "a": "produce",
+     "note": "minced"
+    },
+    {
+     "q": 2.5,
+     "u": "cups",
+     "n": "chicken broth",
+     "a": "pantry"
+    },
+    {
+     "q": 2,
+     "u": "tsp",
+     "n": "Cajun seasoning",
+     "a": "pantry"
+    },
+    {
+     "q": 1,
+     "u": "tsp",
+     "n": "dried thyme",
+     "a": "pantry"
+    },
+    {
+     "q": 2,
+     "u": "",
+     "n": "bay leaves",
+     "a": "pantry"
+    },
+    {
+     "q": 1.5,
+     "u": "cups",
+     "n": "long-grain white rice",
+     "a": "pantry",
+     "note": "dry"
+    },
+    {
+     "q": 3,
+     "u": "",
+     "n": "green onions",
+     "a": "produce",
+     "note": "sliced"
+    }
+   ],
+   "steps": [
+    "Brown the sausage coins over medium-high, 5 minutes. Move them to a plate. The fat left behind flavors everything else.",
+    "Add the onion, pepper and celery. Cook 7 minutes until soft.",
+    "Garlic, Cajun seasoning and thyme, 30 seconds.",
+    "Add the beans, broth and bay leaves. Return the sausage. Simmer uncovered 25 minutes.",
+    "Mash about a third of the beans against the side of the pot with a spoon. That is what makes it creamy instead of soupy.",
+    "Cook the rice separately: 1.5 cups rice, 2.25 cups water, boil, cover, low 16 minutes, rest 10.",
+    "Pull the bay leaves. Rice in the containers, beans over the top, green onions last."
+   ],
+   "pack": "Rice on the bottom, beans over it. Never stir them together on Sunday or the rice turns to paste by Wednesday.",
+   "work": "2 minutes covered. A splash of water first if it has set thick.",
+   "notes": "Genuinely better on day three than day one. One of the few things here that improves in the fridge.",
+   "art": {
+    "base": "rice",
+    "bits": [
+     "bean",
+     "bean",
+     "sausage",
+     "greenpep",
+     "celery",
+     "scallion"
+    ]
+   },
+   "links": [
+    {
+     "t": "search",
+     "label": "Find a video",
+     "sub": "YouTube search",
+     "url": "https://www.youtube.com/results?search_query=red+beans+&+rice+with+smoked+sausage"
+    }
+   ]
+  }
+ ],
  "saved": []
 }

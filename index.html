@@ -1149,7 +1149,7 @@ const ART = {
 };
 
 function dishSvg(r, thumb){
-  const spec = ART[r.id] || {base: (r.cuisine==='Italian'?'pasta':'rice'),
+  const spec = r.art || ART[r.id] || {base: (r.cuisine==='Italian'?'pasta':'rice'),
     bits:['chicken','redpep','greenpep','onion','cheese']};
   const rand = mulberry32(seedFrom('art'+r.id));
   const cx=300, cy=130, R=98;
@@ -1239,8 +1239,14 @@ async function loadShared(){
 }
 
 /* ---------- sync ---------- */
+/* Everything already in the repo, plus anything new on this device. Exporting a subset
+   would quietly delete recipes from the pack the next time you committed the file. */
 function libraryPayload(withPhotos){
-  const out={v:1, when:Date.now(), mine:state.mine, saved:state.saved};
+  const mineIds = state.mine.map(m=>m.id);
+  const merged = SHARED.filter(r=>mineIds.indexOf(r.id)<0)
+    .map(r=>{ const c=Object.assign({},r); delete c.shared; delete c.mine; return c; })
+    .concat(state.mine);
+  const out={v:1, when:Date.now(), mine:merged, saved:state.saved};
   if(withPhotos && Object.keys(state.photos).length) out.photos=state.photos;
   return out;
 }
@@ -1288,7 +1294,7 @@ function showSync(){
     '<button class="btn ghost sm" id="syLoad">Load a file</button></div></div>'+
 
     '<div class="set-row"><b>3. Commit it to the repo (the permanent one)</b>'+
-    '<p>Download the file above and commit it to your repo as <b>library.json</b>, next to index.html. Every device that opens the site picks it up automatically, and so does anyone you send the link to. Do it again whenever you add recipes.</p>'+
+    '<p>Download the file above and commit it to your repo as <b>library.json</b>, next to index.html. Every device that opens the site picks it up automatically, and so does anyone you send the link to. Anything in there also joins the weekly rotation, so the pool grows as you add to it. The download always includes what is already in the repo, so committing it never deletes anything.</p>'+
     (SHARED.length?'<p style="color:var(--ok)"><b>'+SHARED.length+' shared '+(SHARED.length===1?'recipe is':'recipes are')+' loading from your repo right now.</b></p>'
       :'<p>No library.json found in the repo yet.</p>')+'</div>'+
 
@@ -1296,8 +1302,9 @@ function showSync(){
   );
   const b=id=>document.getElementById(id);
   b('syCopy').onclick=()=>{
-    if(!state.mine.length){ toast('You have no recipes of your own yet'); return; }
-    copy(b64e(libraryPayload(false)),'Sync code copied');
+    const pay=libraryPayload(false);
+    if(!pay.mine.length){ toast('There are no recipes to send yet'); return; }
+    copy(b64e(pay),'Sync code copied ('+pay.mine.length+' recipes)');
   };
   b('syPaste').onclick=()=>{
     openModal('<h2 style="margin-bottom:6px">Paste a sync code</h2>'+
@@ -1317,11 +1324,17 @@ function showSync(){
 }
 function byId(id){ return allRecipes().find(r => r.id === id); }
 
-/* Built-ins only. The GitHub Action that sends the Saturday push runs this exact same
-   roll against this exact same list, so the notification always matches the app. */
+/* Built-ins plus anything committed to library.json, in that fixed order. The GitHub
+   Action reads the same two files and runs this same roll, so the Saturday push always
+   names the same four dishes the app shows. Recipes saved only on this device stay out,
+   because the Action cannot see them. */
+function rotationPool(){
+  const ids = RECIPES.map(r=>r.id);
+  return RECIPES.concat(SHARED.filter(r=>ids.indexOf(r.id)<0));
+}
 function rollPool(key, salt){
   const rand = mulberry32(seedFrom(key + (salt||'')));
-  const pool = RECIPES.slice();
+  const pool = rotationPool();
   for(let i=pool.length-1;i>0;i--){ const j=Math.floor(rand()*(i+1)); [pool[i],pool[j]]=[pool[j],pool[i]]; }
   const out=[], seen=new Set();
   for(const r of pool){ if(out.length>=4) break; if(seen.has(r.cuisine)) continue; seen.add(r.cuisine); out.push(r.id); }
@@ -1376,7 +1389,7 @@ function fmtQ(n){
   for(const t of table){ const d=Math.abs(frac-t[0]); if(d<bd){ bd=d; best=t; } }
   const w = whole + (best[0]===1?1:0);
   const f = best[0]===1?'':best[1];
-  if(w===0 && !f) return n<0.1?'0':String(Math.round(n*100)/100);
+  if(w===0 && !f) return String(Math.round(n*100)/100);
   if(w===0) return f;
   return f ? w+' '+f : String(w);
 }
@@ -1475,7 +1488,10 @@ function card(r){
 }
 function renderRecipes(){
   const f=document.getElementById('cuisineFilters');
-  if(!f.children.length) f.innerHTML = CUISINES.map(c=>'<button data-c="'+c+'">'+c+'</button>').join('');
+  const cuisines = ['All'].concat(CUISINES.slice(1).filter(c=>allRecipes().some(r=>r.cuisine===c)))
+    .concat([...new Set(allRecipes().map(r=>r.cuisine))].filter(c=>CUISINES.indexOf(c)<0).sort());
+  if(f.children.length !== cuisines.length)
+    f.innerHTML = cuisines.map(c=>'<button data-c="'+esc(c)+'">'+esc(c)+'</button>').join('');
   [...f.children].forEach(b=>b.setAttribute('aria-pressed', String(b.dataset.c===filterCuisine)));
   const q=query.trim().toLowerCase();
   const list = allRecipes().filter(r=>{
@@ -1702,9 +1718,18 @@ document.addEventListener('pointercancel', ()=>{ endDrag(); dg=null; });
 
 /* ================= shopping ================= */
 const COUNTABLE = ['','clove','cloves','stalk','stalks','can','cans','jar','jars','slice','slices','bunch'];
+const SINGULAR = {cups:'cup',lbs:'lb',cloves:'clove',stalks:'stalk',cans:'can',jars:'jar',slices:'slice'};
+function unitFor(v,u){
+  if(!u) return '';
+  return ' ' + ((v<=1 && SINGULAR[u]) ? SINGULAR[u] : u);
+}
 function shopQty(v,u){
-  if(COUNTABLE.indexOf(u)>-1) return Math.max(1,Math.ceil(v-1e-9)) + (u?' '+u:'');
-  return fmtQ(v) + (u?' '+u:'');
+  /* Countable things round up: you cannot buy 1.75 bell peppers. */
+  if(COUNTABLE.indexOf(u)>-1){ const n=Math.max(1,Math.ceil(v-1e-9)); return n+unitFor(n,u); }
+  /* Measured things round up to the nearest quarter, so a scaled-down herb never
+     comes out as "0 cup" on a list you are shopping from. */
+  const n = Math.max(0.25, Math.ceil(v*4 - 1e-9)/4);
+  return fmtQ(n) + unitFor(n,u);
 }
 function buildShopping(){
   const bag={}, loose={};
@@ -2098,6 +2123,7 @@ document.addEventListener('keydown', e=>{
 /* ================= boot ================= */
 (async function boot(){
   const saved=await store.get();
+  await loadShared();
   const key=anchorKey(menuAnchor());
   if(saved){
     state=Object.assign(state,saved);
@@ -2125,7 +2151,6 @@ document.addEventListener('keydown', e=>{
     const extra=rollPool(key,'x'+state.pool.length).find(id=>state.pool.indexOf(id)<0);
     if(!extra) break; state.pool.push(extra);
   }
-  await loadShared();
   renderAll();
   checkImport();
 })();
